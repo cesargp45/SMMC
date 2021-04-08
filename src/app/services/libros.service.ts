@@ -37,4 +37,12 @@ export class LibrosService {
       catchError(this.handleError)
     )
   }
+
+  public guardarLibro(data:any) : Observable<any> {
+    let url = `${this.basePath}save/book`;
+    return this.http.post(url, data, this.httpOptions)
+    .pipe(
+      catchError(this.handleError)
+    )
+  }
 }
