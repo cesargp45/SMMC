@@ -20,12 +20,13 @@ export class BuscarLibroComponent implements OnInit {
 
   ngOnInit(): void {
     this.llenar();
+    console.log(this.data)
   }
 
   async llenar(){
     await this.metodoPromesa().then((res) => {
       this.data =[];
-      this.data= res.res;
+      this.data= res.data;
     });
   }
 
@@ -33,7 +34,7 @@ export class BuscarLibroComponent implements OnInit {
   metodoPromesa():Promise<any>{
     return new Promise((resolve,reject)=>{
       this.librosService.getLibros()
-      .subscribe((res)=>{resolve(res)});
+      .subscribe((data)=>{resolve(data)});
     });
   }
 
