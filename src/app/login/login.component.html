@@ -1,0 +1,32 @@
+<div class="fondo">
+    <div class="d-flex justify-content-center h-100">
+        <div class="user_card">
+            <div class="d-flex justify-content-center">
+                <div class="brand_logo_fondo">
+                    <img src="https://img2.freepng.es/20180320/cow/kisspng-symbol-yellow-oval-orange-users-5ab08fa6d30ee2.6676424115215205508645.jpg" class="brand_logo" alt="Logo">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center form_fondo">
+                <form  [formGroup]="formData" (ngSubmit)="logear()">
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" name="usuario" class="form-control input_user" formControlName="usuario" value="" placeholder="username">
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" name="password" class="form-control input_pass" formControlName="password" value="" placeholder="password">
+                    </div>
+                    
+                    <div class="d-flex justify-content-center mt-3 login_fondo">
+                        <button type="submit"  class="btn login_btn">Login</button>
+                    </div>
+                </form>
+            </div>
+    
+        </div>
+    </div>
+</div>

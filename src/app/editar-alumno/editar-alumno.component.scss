@@ -1,0 +1,40 @@
+.fondo {
+    height: 100vh;
+    background-image: url("../../assets/imagenes/fondo1.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Numans', sans-serif 
+}
+
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 15px;
+    height: 570px;
+    
+}
+
+.col-md-8 input{
+    margin-left: 200px;
+    margin-top: -5px;
+}
+.form-group span{
+    margin-left: 150px;
+    margin-top: 50px;
+
+}
+
+.btn{
+    margin-top: 20px;
+}

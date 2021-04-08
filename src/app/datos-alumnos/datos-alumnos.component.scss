@@ -1,0 +1,43 @@
+.fondo {
+    height: 100vh;
+    background-image: url("../../assets/imagenes/fondo1.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Numans', sans-serif 
+}
+
+
+
+.container{
+    margin-top: 60px;
+    position: relative;
+    height: 500px;
+    overflow: auto;
+}
+
+
+.buscador .estilo{
+   height: 35px;
+   width: 400px;
+   border: cadetblue;
+   margin-left: 500px;
+   margin-top: 20px;
+   background-color: rgb(107, 107, 107);
+   color: white;
+   border-radius: 10px;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 500px;
+    width:1300px;
+    overflow: auto;
+    margin-top: 30px;
+    margin-left: 30px; 
+    }
+.table-wrapper-scroll-y {
+    display: block;
+    background: #181717;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px; 
+}
