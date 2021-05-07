@@ -62,6 +62,10 @@ const routes: Routes = [
   {
     path: 'crearVendedor',
     component: CrearVendedorComponent
+  },
+  {
+    path: 'guardarLibro',
+    component: GuardarLibroComponent
   }
 ];
 

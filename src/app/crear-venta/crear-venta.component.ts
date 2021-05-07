@@ -10,13 +10,17 @@ import { LibrosService } from '../services/libros.service';
 export class CrearVentaComponent implements OnInit {
   formData!: FormGroup;
   lista:any = [{"id":"2","nombre":"cesar"},{"id":"4","nombre":"estela"},{"id":"6","nombre":"pedro"}];
-  data:any = []; // vendedores
-  data2:any = [];//libros
+  data2:any = []; // vendedores
+  data:any = [];//libros
+
+  dataaux:any=[];
+  data2aux:any=[]
 
   constructor(private librosService:LibrosService) { }
 
   ngOnInit(): void {
-
+    this.dataaux=[];
+    this.data2aux=[];
     this.formData = new FormGroup({
       'vendedor':new FormControl(null),
       'producto':new FormControl(null),
@@ -32,6 +36,9 @@ export class CrearVentaComponent implements OnInit {
       this.data =[];
       this.data= res.data;
     });
+    for (let index = 0; index < this.data.length; index++) {
+        this.dataaux.push(this.data[index].name);
+    }
   }
 
 
@@ -47,6 +54,10 @@ export class CrearVentaComponent implements OnInit {
       this.data2 =[];
       this.data2= res.data;
     });
+
+    for (let index = 0; index < this.data2.length; index++) {
+      this.data2aux.push(this.data2[index].nombre);
+  }
   }
 
 
@@ -64,7 +75,7 @@ export class CrearVentaComponent implements OnInit {
       "vendedor": this.formData.value.vendedor,
       "producto": this.formData.value.producto,
     }
-    console.log(nuevaVenta)
+    console.log(this.formData.value.vendedor)
 
       await this.metodoPromesa3(nuevaVenta).then((res) => {
         alert('Libro guardado con exito!');

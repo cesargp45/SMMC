@@ -13,13 +13,13 @@
                          <div class="group"> 
                              <label for="vendedor" class="label">Vendedor</label> 
                              <select name="vendedor" id="vendedor" name="vendedor" class="form-control select" formControlName="vendedor">
-                                <option [value]="item" *ngFor="let item of data">{{item.nombre}}</option>
+                                <option [value]="item" *ngFor="let item of data2aux">{{item}}</option>
                             </select>
                          </div>
                          <div class="group"> 
                              <label for="producto" class="label">Producto</label> 
                              <select name="producto" id="producto" name="producto" class="form-control select" formControlName="producto">
-                                <option [value]="item" *ngFor="let item of data2">{{item.name}}</option>
+                                <option [value]="item" *ngFor="let item of dataaux">{{item}}</option>
                             </select>
                           </div>
                          <div class="group"> <input type="submit" class="button" value="Guardar"> </div>

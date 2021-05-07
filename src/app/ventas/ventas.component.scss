@@ -9,31 +9,31 @@
 
 
 .container{
-    margin-top: 60px;
+    margin-top: 10%;
     position: relative;
-    height: 500px;
+    height: 60%;
     overflow: auto;
 }
 
 
 .buscador .estilo{
-   height: 35px;
-   width: 400px;
+   height: 30%;
+   width: 30%;
    border: cadetblue;
-   margin-left: 500px;
-   margin-top: 20px;
+   margin-left: 35%;
+   margin-top: 2%;
    background-color: rgb(107, 107, 107);
    color: white;
-   border-radius: 10px;
+   border-radius: 10%;
 }
 
 .my-custom-scrollbar {
     position: relative;
-    height: 500px;
-    width:1300px;
+    height: 70%;
+    width:95%;
     overflow: auto;
-    margin-top: 30px;
-    margin-left: 30px; 
+    margin-top: 3%;
+    margin-left: 2%; 
     }
 .table-wrapper-scroll-y {
     display: block;

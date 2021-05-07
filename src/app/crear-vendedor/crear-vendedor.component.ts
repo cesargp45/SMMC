@@ -31,8 +31,8 @@ export class CrearVendedorComponent implements OnInit {
     let nuevoVendedor ={
       "nombre": this.formData.value.nombre,
       "dpi": this.formData.value.dpi,
-      "direccion": this.formData.value.direccion,
       "apellido": this.formData.value.apellido,
+      "direccion": this.formData.value.direccion,
       "telefono": this.formData.value.telefono
     }
     console.log(nuevoVendedor)

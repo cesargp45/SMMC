@@ -30,8 +30,9 @@ export class GuardarLibroComponent implements OnInit {
       "editorial": this.formData.value.editorial,
       "pages": parseInt(this.formData.value.pages,10),
     }
+    console.log(nuevoLibro)
 
-      await this.metodoPromesa3(nuevoLibro).then((res) => {
+    await this.metodoPromesa3(nuevoLibro).then((res) => {
         alert('Libro guardado con exito!');
         
     });
