@@ -45,4 +45,36 @@ export class LibrosService {
       catchError(this.handleError)
     )
   }
+/// obtener todos los vendedores
+  public getVendedores() : Observable<any> {
+    let url = `${this.basePath}get/vendedores`;
+    return this.http.get(url, this.httpOptions)
+    .pipe(
+      catchError(this.handleError)
+    )
+  }
+  /// obtener todas las ventas
+  public getVentas() : Observable<any> {
+    let url = `${this.basePath}get/ventas`;
+    return this.http.get(url, this.httpOptions)
+    .pipe(
+      catchError(this.handleError)
+    )
+  }
+
+  public guardarVendedor(data:any) : Observable<any> {
+    let url = `${this.basePath}save/vendedor`;
+    return this.http.post(url, data, this.httpOptions)
+    .pipe(
+      catchError(this.handleError)
+    )
+  }
+
+  public guardarVenta(data:any) : Observable<any> {
+    let url = `${this.basePath}save/venta`;
+    return this.http.post(url, data, this.httpOptions)
+    .pipe(
+      catchError(this.handleError)
+    )
+  }
 }

@@ -1,0 +1,39 @@
+<div class="fondo">
+    
+    <div>
+        <p>
+              .
+        </p>
+    </div>
+     <div class="container">
+         <div class="row">
+             <div class="col-md-12">
+                 <div class="well well-sm">
+                     <form  [formGroup]="formData" (ngSubmit)="guardar()">
+                        <div class="group"> 
+                            <label for="dpi" class="label">DPI</label> 
+                            <input id="dpi" type="text" name="dpi" class="form-control input"  placeholder="DPI"formControlName="dpi">
+                         </div>
+                         <div class="group"> 
+                             <label for="nombre" class="label">Nombre</label> 
+                             <input id="nombre" type="text" name="nombre" class="form-control input" placeholder="Nombre" formControlName="nombre"> 
+                         </div>
+                         <div class="group"> 
+                             <label for="apellido" class="label">Apellido</label> 
+                             <input id="apellido" type="text" name="apellido" class="form-control input"  placeholder="Apellido"formControlName="apellido">
+                          </div>
+                          <div class="group"> 
+                             <label for="direccion" class="label">Dirección</label> 
+                             <input id="direccion" type="text" name="direccion" class="form-control input"  placeholder="Dirección"formControlName="direccion">
+                          </div>
+                          <div class="group"> 
+                            <label for="telefono" class="label">Teléfono</label> 
+                            <input id="telefono" type="text" name="telefono" class="form-control input"  placeholder="Teléfono"formControlName="telefono">
+                         </div>
+                         <div class="group"> <input type="submit" class="button" value="Guardar"> </div>
+                     </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
